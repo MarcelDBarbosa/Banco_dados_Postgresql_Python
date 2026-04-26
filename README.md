@@ -2,23 +2,23 @@
 
 # Sistema de Cadastro de Hoteis com PostgreSQL
 
-Este script (`banco_dados.py`) demonstra operacoes basicas de banco de dados com Python:
+Este script (`banco_dados.py`) demonstra operações básicas de banco de dados com Python:
 
-- criacao de tabela;
-- insercao de registros;
+- criação de tabela;
+- inserção de registros;
 - consulta de dados;
-- atualizacao de registros;
-- exclusao de registros.
+- atualização de registros;
+- exclusão de registros.
 
-As operacoes SQL usam consultas parametrizadas (`%s`), o que ajuda a prevenir SQL Injection.
+As operações SQL usam consultas parametrizadas (`%s`), o que ajuda a prevenir SQL Injection.
 
-## Requisito obrigatorio
+## Requisito obrigatório
 
-E necessario ter o **PostgreSQL instalado localmente** e em execucao para que o script funcione.
+É necessário ter o **PostgreSQL instalado localmente** e em execução para que o script funcione.
 
-## Dependencias
+## Dependências
 
-As dependencias estao no arquivo `requirements.txt`:
+As dependências estão no arquivo `requirements.txt`:
 
 - `psycopg==3.3.3`
 - `python-dotenv==1.0.1`
@@ -38,13 +38,13 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-3. Instale as dependencias:
+3. Instale as dependências:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Crie o arquivo `.env` na pasta `LocalEscolhido` com as variaveis:
+4. Crie o arquivo `.env` na pasta `LocalEscolhido` com as variáveis:
 
 ```env
 DB_HOST=localhost
@@ -54,15 +54,15 @@ DB_USER=seu_usuario
 DB_PASSWORD=sua_senha
 ```
 
-## Preparacao do banco
+## Preparação do banco
 
 Antes de executar o script, garanta que:
 
-- o servidor PostgreSQL local esta ativo;
+- o servidor PostgreSQL local está ativo;
 - o banco informado em `DB_NAME` existe;
-- o usuario informado tem permissao para criar tabela e manipular dados.
+- o usuário informado tem permissão para criar tabela e manipular dados.
 
-## Execucao
+## Execução
 
 Rode o script:
 
@@ -70,8 +70,8 @@ Rode o script:
 python banco_dados.py
 ```
 
-## Observacoes importantes
+## Observações importantes
 
-- Se quiser criar a tabela pelo script, chame a funcao `criar_tabela(conn, cur)` antes das operacoes de insercao.
-- Em caso de erro de SQL, o script faz `rollback` para evitar transacoes quebradas.
-- Nao versionar o arquivo `.env` com credenciais reais.
+- Se quiser criar a tabela pelo script, chame a função `criar_tabela(conn, cur)` antes das operações de inserção.
+- Em caso de erro de SQL, o script faz `rollback` para evitar transações quebradas.
+- Não versionar o arquivo `.env` com credenciais reais.
