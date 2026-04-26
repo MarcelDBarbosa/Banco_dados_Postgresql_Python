@@ -1,6 +1,6 @@
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
-# Sistema de Cadastro de Hoteis com PostgreSQL
+# Sistema de Cadastro de Hotéis com PostgreSQL
 
 Este script (`banco_dados.py`) demonstra operações básicas de banco de dados com Python:
 
